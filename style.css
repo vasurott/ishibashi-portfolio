@@ -1,0 +1,1407 @@
+/* -------------------------------------
+
+
+common
+
+
+---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Caramel&family=Dela+Gothic+One&family=Ephesis&family=Fascinate&family=Fascinate+Inline&family=Gravitas+One&family=Great+Vibes&family=Hina+Mincho&family=Instrument+Serif:ital@0;1&family=Kaisei+Tokumin&family=Kings&family=Kiwi+Maru&family=Klee+One&family=Kosugi+Maru&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Nanum+Pen+Script&family=New+Tegomin&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+JP:wght@200..900&family=Passion+One:wght@400;700;900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Rubik+Glitch&family=Scheherazade+New:wght@400;500;600;700&family=Shippori+Mincho+B1&family=Sora:wght@100..800&family=Tai+Heritage+Pro:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&family=Yesteryear&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Caramel&family=Dela+Gothic+One&family=Ephesis&family=Fascinate&family=Fascinate+Inline&family=Gravitas+One&family=Great+Vibes&family=Hina+Mincho&family=Instrument+Serif:ital@0;1&family=Kaisei+Tokumin&family=Kings&family=Kiwi+Maru&family=Klee+One&family=Kosugi+Maru&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Limelight&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Nanum+Pen+Script&family=New+Tegomin&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+JP:wght@200..900&family=Passion+One:wght@400;700;900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Rubik+Glitch&family=Scheherazade+New:wght@400;500;600;700&family=Shippori+Mincho+B1&family=Sora:wght@100..800&family=Tai+Heritage+Pro:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&family=Yesteryear&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Caramel&family=Dela+Gothic+One&family=Ephesis&family=Fascinate&family=Fascinate+Inline&family=Gravitas+One&family=Great+Vibes&family=Hina+Mincho&family=Instrument+Serif:ital@0;1&family=Kaisei+Tokumin&family=Kings&family=Kiwi+Maru&family=Klee+One&family=Kosugi+Maru&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Limelight&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Nanum+Pen+Script&family=New+Tegomin&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+JP:wght@200..900&family=Passion+One:wght@400;700;900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Rubik+Glitch&family=Scheherazade+New:wght@400;500;600;700&family=Shippori+Mincho+B1&family=Sora:wght@100..800&family=Tai+Heritage+Pro:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&family=Yesteryear&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Caramel&family=Dela+Gothic+One&family=Ephesis&family=Fascinate&family=Fascinate+Inline&family=Gravitas+One&family=Great+Vibes&family=Hina+Mincho&family=Instrument+Serif:ital@0;1&family=Kaisei+Tokumin&family=Kings&family=Kiwi+Maru&family=Klee+One&family=Kosugi+Maru&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Limelight&family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Nanum+Pen+Script&family=New+Tegomin&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+JP:wght@200..900&family=Nuosu+SIL&family=Passion+One:wght@400;700;900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Rubik+Glitch&family=Scheherazade+New:wght@400;500;600;700&family=Shippori+Mincho+B1&family=Sora:wght@100..800&family=Tai+Heritage+Pro:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Titan+One&family=Yesteryear&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Old+Mincho&display=swap');
+:root{
+    --bgcolor: #e3e1e1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bgcolor);
+}
+.c-eng{
+    font-family: Bebas Neue;
+}
+.eng{
+    font-family: Nuosu SIL
+}
+.c-jp{
+    font-family: Klee One;
+}
+@font-face{
+    font-family: soukou;
+    src: url(./fonts/soukou.ttf) format("truetype");
+}
+
+#main.active{
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+/* -------------------------------------
+
+
+header
+
+
+---------------------------------------*/
+header{
+    overflow: hidden;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+}
+.border{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    margin: 20px 50px 0 0;
+    pointer-events: all;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+.one{
+    border: 1px solid #000;
+    transition: transform .5s ease;
+    transition-delay: 0s;
+}
+.two{
+    border: 1px solid #000;
+    margin: 10px 0 10px 0;
+    transition: transform .5s ease;
+    transition-delay: .5s;
+}
+.three{
+    border: 1px solid #000;
+    transition: transform .5s ease;
+    transition-delay: 0s;
+}
+.one.active{
+    transform: 
+        rotate(45deg)
+        translateY(17px);
+    transition-delay: .3s;
+}
+.two.active{
+    transform: translateX(150px);
+    transition-delay: 0s;
+}
+.three.active{
+    transform: 
+        rotate(-45deg)
+        translateY(-17px);
+    transition-delay: .3s;
+}
+.border:hover{
+    transform: scale(.85);
+}
+.navbar{
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: 
+        translateY(-50%)
+        translateX(350px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: transform .8s ease;
+}
+.navbar.active{
+    transform:
+        translateY(-50%) 
+        translateX(0);
+}
+.navbar li{
+    list-style: none;
+    margin: 10px 0;
+}
+.navbar li a{
+    display: block;
+    color: #f0f8ff;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: 1.8rem;
+    transition: color .4s;
+}
+.navbar li a:hover{
+    color: #73ccd7;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        width: 280px;
+        height: 280px;
+    }
+    .navbar li a{
+        padding: 10px 50px;
+        font-size: 1.7rem;
+    }
+}
+/* -------------------------------------
+
+
+hero
+
+
+---------------------------------------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/herobg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+.hero-img img{
+    width: 300px;
+    transition: all .5s ease;
+}
+#peace{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .4s ease;
+}
+.hero-text h1{
+    font-size: 12rem;
+    letter-spacing: 10px;
+    font-weight: 400;
+    transition: font-size .4s ease;
+}
+#curtain{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    position: fixed;
+    z-index: 3;
+}
+#op-logo{
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 1048px){
+    .hero-img img{
+        width: 270px;
+    }
+    .hero-text h1{
+        font-size: 12rem;
+        letter-spacing: 9px;
+    }
+}
+@media (max-width: 768px){  
+    #peace{
+        width: 400px;
+    }
+    #bg{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .hero-text{
+        transform: 
+            translate(-50%, -50%)
+            rotate(45deg);
+    }
+    .hero-text h1{
+        font-size: 15rem;
+    }
+}
+@media (max-width: 600px){
+    #peace{
+        width: 380px;
+    }
+    .hero-text h1{
+        font-size: 12rem;
+    }
+}
+@media (max-width: 400px){
+    #peace{
+        width: 330px;
+    }
+    .hero-text h1{
+        font-size: 10rem;
+    }
+}
+
+
+/* -------------------------------------
+
+
+int-heading
+
+
+---------------------------------------*/
+.heading{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-color: var(--bgcolor);
+    overflow: hidden;
+}
+.int-heading img{
+    width: 300px;
+}
+.left-hand{
+    transition: transform .5s ease-out;
+}
+.right-hand{
+    transition: transform .5s ease-out;
+}
+.int-heading-flex{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#i-left-hand{
+    margin-right: 130px;
+    animation: i-huwa-left 5s ease-out infinite alternate;
+}
+@keyframes i-huwa-left {
+    from{
+        transform: 
+            translateY(7px)
+            scaleX(-1);
+    }
+    to{
+        transform: 
+            translateY(-7px)
+            scaleX(-1);
+    }
+}
+#i-right-hand{
+    margin-left: 130px;
+    animation: i-huwa-right 5s ease-out infinite alternate;
+}
+@keyframes i-huwa-right {
+    from{
+        transform: 
+            translateY(7px);
+    }
+    to{
+        transform: 
+            translateY(-7px);
+    }
+}
+.int-heading-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s ease-out;
+}
+.int-heading h1{
+    font-size: 6rem;
+    line-height: 50px;
+}
+.int-heading h3{
+    text-align: center;
+    font-family: soukou;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1048px){
+    .int-heading img{
+        width: 270px;
+    }
+}
+@media (max-width: 768px){
+    .int-heading h1{
+        font-size: 8rem;
+        line-height: 70px;
+    }
+    .int-heading img{
+        width: 330px;
+    }
+    @keyframes i-huwa-left {
+        from{
+            transform: 
+                translateY(-15vh)
+                scale(-1, -1);
+        }
+        to{
+            transform: 
+                translateY(-16vh)
+                scale(-1, -1);
+        }
+    }
+    @keyframes i-huwa-right {
+        from{
+            transform: 
+                translateY(15vh);
+        }
+        to{
+            transform: 
+                translateY(16vh);
+        }
+    }
+}
+@media (max-width: 650px){
+    #i-left-hand{
+        margin-right: 0px;
+    }
+    #i-right-hand{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 550px){
+    .int-heading h1{
+        font-size: 6rem;
+        line-height: 50px;
+        transition: all .4s ease;
+    }
+    .int-heading h3{
+        font-size: 1.3rem;
+    }
+}
+
+/* -------------------------------------
+
+
+introduction
+
+
+---------------------------------------*/
+.introduction{
+    background-image: url(img/herobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.int-title{
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    align-items: end;
+    padding-top: 50px;
+}
+.int-title .NAME{
+    justify-self:center;
+    transition: transform .6s ease-out;
+}
+.int-title .NAME h1{
+    font-size: 12rem;
+    font-weight: 500;
+    line-height: 85px;
+    text-align: center;
+    transition: font-size .4s ease;
+}
+.int-title .NAME h3{
+    font-family: soukou;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: font-size .4s ease;
+}
+.int-title .birth{
+    justify-self: center;
+    transition: opacity .6s ease-out, transform .6s ease-out;
+}
+.int-title .birth h4{
+    font-size: 1.2rem;
+}
+.int-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.int-img{
+    transition: transform .7s ease-out;
+}
+.int-flex img{
+    width: 300px;
+    animation: int-huwa 5s ease-out infinite alternate;
+    transition: width .4s ease, transform .4s ease-out;
+}
+@keyframes int-huwa {
+    from{
+        transform: translateY(7px);
+    }
+    to{
+        transform: translateY(-7px);
+    }
+}
+.int-flex p{
+    font-size: 1.6rem;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: font-size .4s ease;
+}
+.int-flex .int-box{
+    width: 350px;
+    height: 100%;
+    padding: 20px 40px;
+    margin: 0 5px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.int-left{
+    transition: transform .6s ease-out;
+}
+.int-right{
+    transition: transform .6s ease-out;
+}
+@media (max-width : 1048px){
+    .int-title .NAME h1{
+        font-size: 9.5rem;
+        line-height: 75px;
+    }
+    .int-title .NAME h3{
+        font-size: 1.7rem;
+    }
+    .int-flex img{
+        width: 250px;
+    }
+    .int-flex p{
+        font-size: 1.4rem;
+        line-height: 25px;
+    }
+    .int-flex .int-box{
+        width: 300px;
+        height: 100%;
+        padding: 20px 40px;
+    }
+}
+@media (max-width: 768px){
+    .int-title{
+        display: block;
+    }
+    .int-title .birth{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .int-flex img{
+        width: 100%;
+    }  
+    @keyframes int-huwa {
+        from{
+            transform: 
+                translateY(7px)
+                rotate(20deg);
+        }
+        to{
+            transform: 
+                translateY(-7px)
+                rotate(20deg);
+        }
+    }
+    .int-flex .int-box{
+        width: 350px;
+        height: 100%;
+        padding: 20px 40px;
+        margin: 0 5px;
+        border-right: 0px solid #000;
+        border-left: 0px solid #000;
+        background-color: rgba(255, 255, 255, 0.321);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+    } 
+    .int-flex .int-left{
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+    }
+    .int-flex .int-right{
+        height: auto;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+    }
+
+}
+@media (max-width: 600px){
+    .int-title .NAME h1{
+        font-size: 8rem;
+        line-height: 70px;
+    }
+    .int-flex{
+        display: grid;
+        grid-template-rows: 1fr .5fr 1fr;
+        align-items: center;
+        margin-top: 20px;
+    } 
+    .int-flex .int-box{
+        margin: 0px;
+    }
+    .int-flex .int-img{
+        justify-self: center;
+    }
+    .int-flex img{
+        width: 150px
+    }  
+    @keyframes int-huwa {
+        from{
+            transform: 
+                translateY(7px)
+                rotate(0deg);
+        }
+        to{
+            transform: 
+                translateY(-7px)
+                rotate(0deg);
+        }
+    } 
+    .int-flex .int-left{
+        position: inherit;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+    }
+    .int-flex .int-right{
+        position: inherit;
+        bottom: 0%;
+        left: 0%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 476px){
+    .int-title .NAME h1{
+        font-size: 6.5rem;
+        line-height: 60px;
+    }
+    .int-title .NAME h3{
+        font-size: 1.5rem;
+    }
+    .int-title .birth h4{
+        font-size: 1.1rem;
+    }
+}
+
+/* -------------------------------------
+
+
+work-heading
+
+
+---------------------------------------*/
+.work-heading img{
+    width: 200px;
+    transition: transform .5s ease-out;
+}
+.work-heading-flex{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#w-left-hand{
+    margin-right: 130px;
+    animation: w-huwa-left 5s ease-out infinite alternate;
+}
+@keyframes w-huwa-left {
+    from{
+        transform: translateY(7px);
+    }
+    to{
+        transform: translateY(-7px);
+    }
+}
+#w-right-hand{
+    margin-left: 130px;
+    animation: w-huwa-right 5s ease-out infinite alternate;
+}
+@keyframes w-huwa-right {
+    from{
+        transform: 
+            translateY(7px)
+            scaleX(-1);
+    }
+    to{
+        transform: 
+            translateY(-7px)
+            scaleX(-1);
+    }
+}
+.work-heading-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    transition: transform .6s ease-out;
+}
+.work-heading h1{   
+    font-size: 6rem;
+    line-height: 50px;
+    transition: all .4s ease;
+}
+.work-heading h3{
+    font-family: soukou;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.work-heading h5{
+    font-size: 1.3rem;
+}
+.work-heading span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.work-heading-letter{
+    margin-top: 30px;
+}
+
+@media (max-width: 1048px){
+    .work-heading img{
+        width: 170px;
+    }
+}
+@media (max-width: 768px){
+    .work-heading img{
+        width: 200px;
+    }
+    #w-left-hand{
+        margin-right: 150px;
+    }
+    @keyframes w-huwa-left {
+        from{
+            transform: 
+                translateY(7px)
+                rotate(-100deg);
+        }
+        to{
+            transform: 
+                translateY(-7px)
+                rotate(-100deg);
+        }
+    }
+    #w-right-hand{
+        margin-left: 150px;
+    }
+    @keyframes w-huwa-right {
+        from{
+            transform: 
+                translateY(7px)
+                scaleX(-1)
+                rotate(-100deg);
+        }
+        to{
+            transform: 
+                translateY(-7px)
+                scaleX(-1)
+                rotate(-100deg);
+        }
+    }
+    .work-heading-letter{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px){
+    #w-left-hand{
+        margin-right: 130px;
+    }
+    #w-right-hand{
+        margin-left: 130px;
+    }
+    .work-heading img{
+        width: 170px;
+    }
+    .work-heading h1{   
+        font-size: 5rem;
+        line-height: 50px;
+    }   
+    .work-heading h3{
+        font-size: 1.5rem;
+    }
+    .work-heading h5{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 476px) {
+    #w-left-hand{
+        margin-right: 100px;
+    }
+    #w-right-hand{
+        margin-left: 100px;
+    }
+    .work-heading img{
+        width: 150px;
+    }
+    .work-heading h1{   
+        font-size: 4rem;
+        line-height: 40px;
+    }   
+    .work-heading h3{
+        font-size: 1.2rem;
+    }
+    .work-heading h5{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 360px){
+    .work-heading h1{   
+        font-size: 3.7rem;
+        line-height: 37px;
+    }  
+}
+/* -------------------------------------
+
+
+work(s) common
+
+
+---------------------------------------*/
+.works{
+    width: 100%;
+    background-image: url(img/works-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.works img{
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.works img:hover{
+    filter: brightness(70%);
+    transform: translateY(-10px);
+}
+.work img{
+    width: 100%;
+}
+.content{
+    transition: transform .7s ease-out;
+}
+.text-heading{
+    transition: transform .5s ease-out, opacity .5s ease-out;
+}
+.title-left{
+    transition: transform .5s ease-out, opacity .5s ease-out;
+}
+.title-right{
+    transition: transform .5s ease-out, opacity .5s ease-out;
+}
+/* -------------------------------------
+
+
+first
+
+
+---------------------------------------*/
+.first{
+    background-color: var(--bgcolor);
+    padding-bottom: 150px;
+    /* overflow: hidden; */
+    mix-blend-mode: multiply;
+}
+.image-flex{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.first h5{
+    font-size: 1.2rem;
+    transform: scaleY(1.3);
+    transition: font-size .4s ease;
+}
+.f-upper-content{
+    display: flex;
+}
+.f-below-content{
+    display: flex;
+}
+.f-content{
+    margin: 0 20px;
+}
+.f-box .detail{
+    margin-bottom: 20px;
+}
+.f-text{
+    padding-top: 100px;
+    text-align: center;
+}
+.f-text-heading{
+    transition:  transform .6s ease-out, opacity .5s ease-out;
+}
+.f-text h1{
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 100px;
+    transform: scaleY(2);
+    transition: font-size .4s ease;
+}
+#explain{
+    transition: transform .6s ease-out, opacity .6s ease-out;
+}
+.f-text h2{
+    font-size: 4rem;
+    text-align: end;
+    margin-right: 2%;
+    transform: translateY(-50px);
+}
+.f-text h3{
+    font-size: 1.4rem;
+    font-family: soukou;
+    font-weight: 400;
+    transition: font-size .4s ease;
+}
+@media (max-width: 1048px){
+    .first h5{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 900px){
+    .f-text h1{
+        font-size: 6rem;
+        line-height: 80px;
+    }
+    .f-text h3{
+        font-size: 1.3rem;
+        margin-top: 6px;
+    }
+    .f-text h2{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 768px){
+    .first h5{
+        font-size: 1.3rem;
+    }
+    .f-flex{
+        display: block;        
+    }
+    .f-upper-content{
+        margin-bottom: 30px;
+    }
+    .f-text{
+        padding-top: 40px;
+    }
+    .f-content{
+        margin: 0 30px;
+    }
+    .f-text h1{
+        font-size: 7rem;
+        line-height: 100px;
+    }
+    .f-text h3{
+        font-size: 1.4rem;
+    }
+    .f-text h2{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 550px){
+    .f-content{
+        margin: 0 20px;
+    }
+    .first h5{
+        font-size: 1.1rem;
+    }
+    .f-text h1{
+        font-size: 6rem;
+        line-height: 75px;
+    }
+    .f-text h2{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 476px){
+    .f-content{
+        margin: 0 12px;
+    }
+    .first h5{
+        font-size: 1rem;
+    }
+    .f-text h1{
+        font-size: 5.5rem;
+        line-height: 70px;
+    }
+    .f-text h2{
+        font-size: 2.7rem;
+        transform: translateY(-40px);
+    }
+}
+
+/* -------------------------------------
+
+
+second
+
+
+---------------------------------------*/
+.second{
+    background-color: var(--bgcolor);
+    padding-bottom: 150px;
+    /* overflow: hidden; */
+    mix-blend-mode: multiply;
+}
+.text-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.s-text{
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+.s-text-left h1{
+    font-size: 8rem;
+    font-weight: 400;
+    transform: scaleY(2);
+}
+.s-text-right h2{
+    font-size: 1.2rem;
+    font-family: soukou;
+    font-weight: 500;
+}
+.s-upper-content{
+    display: flex;
+    align-items: end;
+}
+.s-below-content{
+    display: flex;
+    align-items: end;
+}
+.s-content{
+    margin: 0 20px;
+}
+.s-box .detail{
+    margin: 15px 0;
+}
+.s-box h5{
+    font-size: 1.3rem;
+    transform: scaleY(1.2);
+}
+@media (max-width: 1048px){
+    .s-text{
+        margin-bottom: 70px;
+    }
+    .s-flex{
+        display: block;
+    }
+    .s-content{
+        margin: 0 25px;
+    }
+    .s-box h5{
+        font-size: 1.5rem;
+    }
+    .s-upper-content{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    .s-text-left h1{
+        font-size: 7.4rem;
+    }
+    .s-content{
+        margin: 0 20px;
+    }
+    .s-box h5{
+        font-size: 1.3rem;
+    }
+    .s-box .detail{
+        margin: 0px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 550px){
+    .s-text-left h1{
+        font-size: 6.5rem;
+    }
+    .s-text-right h2{
+        font-size: 1.1rem;
+    }
+    .s-content{
+        margin: 0 15px;
+    }
+    .s-box h5{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 476px){
+    .s-text-left h1{
+        font-size: 5.5rem;
+    }
+    .s-text-right h2{
+        font-size: .9rem;
+    }
+    .s-content{
+        margin: 0 10px;
+    }
+    .s-box h5{
+        font-size: 1rem;
+    }
+}
+/* -------------------------------------
+
+
+third
+
+
+---------------------------------------*/
+.third{
+    background-color: var(--bgcolor);
+    padding-bottom: 150px;
+    /* overflow: hidden; */
+    mix-blend-mode: multiply;
+}
+.t-text{
+    margin-bottom: 20px;
+}
+.t-text h1{
+    font-size: 6rem;
+    font-weight: 400;
+    transform: scaleY(2);
+    line-height: 100px;
+    letter-spacing: 2px;
+    transition: font-size .4s ease;
+}
+.t-text span{
+    font-family: soukou;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.t-text h2{
+    font-size: 1.2rem;
+    font-family: soukou;
+    font-weight: 500;
+}
+.t-text-right{
+    transform: translateY(-25px);
+}
+.t-upper-content{
+    display: flex;
+}
+.t-below-content{
+    display: flex;
+}
+.t-content{
+    margin: 0 30px;
+}
+.t-details{
+    display: flex;
+    justify-content: space-between;
+}
+.t-box h5{
+    font-size: 1.3rem;
+    transform: scaleY(1.2);
+}
+@media (max-width: 1048px){
+    .t-box h5{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px){
+    .t-flex{
+        display: block;
+    }
+    .t-upper-content{
+        margin-bottom: 60px;
+    }
+    .t-box h5{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 900px){
+    .t-text h1{
+        font-size: 5rem;
+        line-height: 85px;
+    }
+    .t-text span{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 550px){
+    .t-text h1{
+        font-size: 4.5rem;
+        line-height: 75px;
+        letter-spacing: 1px;
+    }
+    .t-text span{
+        font-size: 1.6rem;
+    }
+    .t-text h2{
+        font-size: 1rem;
+    }
+    .t-content{
+        margin: 0 20px;
+    }
+    .t-box h5{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 476px){
+    .t-text h1{
+        font-size: 3.7rem;
+        line-height: 65px;
+        letter-spacing: 0px;
+    }
+    .t-text span{
+        font-size: 1.4rem;
+    }
+    .t-text h2{
+        font-size: .9rem;
+    }
+    .t-content{
+        margin: 0 10px;
+    }
+    .t-box h5{
+        font-size: 1rem;
+    }
+}
+/* -------------------------------------
+
+
+fourth
+
+
+---------------------------------------*/
+.fourth{
+    background-color: var(--bgcolor);
+    padding-bottom: 100px;
+    mix-blend-mode: multiply;
+}
+.fth-content{
+    margin: 0 20px;
+}
+.fth-upper-box{
+    display: flex;
+}
+.fth-below-box{
+    display: flex;
+}
+.fth-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fth-text h1{
+    font-size: 7rem;
+    transform: scaleY(2);
+    font-weight: 400;
+    line-height: 100px;
+}
+@media (max-width: 1048px){
+    .fth-flex{
+        display: block;
+    }
+    .fth-upper-box{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 900px){
+    .fth-text h1{
+        font-size: 6rem;
+        line-height: 90px;
+    }
+}
+@media (max-width: 768px){
+    .fth-content{
+        margin: 0 10px;
+    }
+}
+@media (max-width: 550px){
+    .fth-text h1{
+        font-size: 5rem;
+        line-height: 75px;
+    }
+}
+@media (max-width: 476px){
+    .fourth img{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .fth-upper-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .fth-below-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fth-content{
+        margin: 0 20px;
+    }
+    .fth-text h1{
+        font-size: 5rem;
+        line-height: 77px;
+    }
+}
+/* -------------------------------------
+
+
+footer
+
+
+---------------------------------------*/
+footer{
+    width: 100%;
+    color: #000000;
+    overflow: hidden;
+}
+footer .logo img{
+    width: 300px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer .container{
+    background-image: url(img/herobg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.gratitude{
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform .5s ease-out, opacity .5s ease-out;
+}
+.gratitude h3{
+    font-size: 3rem;
+}
+.footer-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+}
+.footer-flex h5{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.last-ud{
+    margin-left: 1.5%;
+}
+.contact{
+    margin-right: 1.5%;
+}
+
+@media (max-width: 768px){
+    .gratitude h3{
+        font-size: 2.7rem;
+    }
+    .footer-flex h5{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px){
+    .gratitude h3{
+        font-size: 2.5rem;
+    }
+}@media (max-width: 476px){
+    .gratitude{
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-flex{
+        text-align: center;
+        display: block;
+    }
+    .footer-flex h5{
+        font-size: 1.3rem;
+    }
+    .last-ud{
+        margin-left: 0%;
+    }
+    .contact{
+        margin-right: 0%;
+        margin-top: 20px;
+    }
+}
+
+
+/* -------------------------------------
+
+
+zoom
+
+
+---------------------------------------*/
+#zoom{
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s ease, opacity .5s ease;
+}
+#zoom img{
+    width: 30%;
+}
+@media (max-width: 1048px){
+    #zoom img{
+        width: 50%;
+    }
+}
+@media (max-width: 768px){
+    #zoom img{
+        width: 60%;
+    }
+}
+@media (max-width: 550px){
+    #zoom img{
+        width: 75%;
+    }
+}
+@media (max-width: 476px){
+    #zoom img{
+        width: 75%;
+    }
+}
